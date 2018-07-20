@@ -1,0 +1,180 @@
+<mat-toolbar>    
+        <span>สั่งทำใบพันธุ์ประวัติโค</span>    
+        <span class="demo-toolbar"></span>         
+    </mat-toolbar>    
+    <mat-card>
+                <mat-card-title class="text-center" style="font-size:35px;">    
+                                สั่งทำใบพันธุ์ประวัติโค
+                             </mat-card-title>
+        <mat-tab-group>
+                <mat-tab label="บราห์มัน"> 
+                        <div class="container">
+                                        <mat-card>    
+                                                        <!-- Title of an Card -->    
+                                                        <mat-card-title class="text-center">    
+                                                            กรอกแบบฟอร์มจดทะเบียนโค
+                                                        </mat-card-title>
+                                                        <div class="container text-center"> <!-- หัวหลัก -->   
+                                                          <div class="row">
+                                                              <mat-card class="col text-center"><!-- ช่องแรก -->   
+                                                                  <mat-card-title class="text-center">    
+                                                                        กรอกรายละเอียดสมาชิก
+                                                                    </mat-card-title>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>ชื่อสมาชิก</mat-label>
+                                                                        <input matInput placeholder="ภาษาไทย">
+                                                                      </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>ชื่อสมาชิก</mat-label>
+                                                                        <input matInput placeholder="ภาษาอังกฤษ">
+                                                                      </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>ที่อยู่</mat-label>
+                                                                        <input matInput placeholder="กรอกที่อยู่แบบละเอียด">
+                                                                      </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>เบอร์โทร</mat-label>
+                                                                        <input matInput placeholder="กรอกเบอร์โทร">
+                                                                      </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>เลขที่สมาชิก</mat-label>
+                                                                        <input matInput placeholder="(สามัญ/วิสามัญ)">
+                                                                      </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>ชื่อฟาร์ม</mat-label>
+                                                                        <input matInput placeholder="กรอกชื่อฟาร์ม">
+                                                                      </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>เครื่องหมายฟาร์ม</mat-label>
+                                                                        <input matInput placeholder="กรอกเครื่องหมายฟาร์ม">
+                                                                      </mat-form-field>
+                                                              </mat-card> 
+                                                              <mat-card class="col text-center"><!-- ช่องสอง -->   
+                                                                  <mat-card-title class="text-center">    
+                                                                        กรอกรายละเอียดโค
+                                                                    </mat-card-title>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>ชื่อโค</mat-label>
+                                                                        <input matInput placeholder="กรอกชื่อโค">
+                                                                      </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>หมายเลขประจำตัวโค</mat-label>
+                                                                        <input matInput placeholder="กรอกหมายเลขประจำตัวโค">
+                                                                      </mat-form-field>
+                                                                  <mat-form-field>
+                                                                        <input matInput [matDatepicker]="picker" placeholder="วัน/เดือน/ปีเกิด">
+                                                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                                                        <mat-datepicker #picker></mat-datepicker>
+                                                                      </mat-form-field>
+                                                                  <mat-form-field>
+                                                                        <mat-select placeholder="เพศ">
+                                                                            <mat-option>-- ไม่ระบุ --</mat-option>
+                                                                              <mat-option value="Bull">เพศผู้</mat-option>
+                                                                              <mat-option value="Cow">เพศเมีย</mat-option>
+                                                                            </mat-select>
+                                                                        <mat-hint align="end">กดที่ลูกศรเพื่อเลือกเพศ^</mat-hint>
+                                                                      </mat-form-field>
+                                                                  <mat-form-field>
+                                                                          <mat-select placeholder="สี">
+                                                                              <mat-option>-- ไม่ระบุ --</mat-option>
+                                                                                  <mat-option value="red">สีแดง</mat-option>
+                                                                                  <mat-option value="gray">สีเทา</mat-option>
+                                                                                  <mat-option value="white">สีขาว</mat-option>
+                                                                                  <mat-option value="black">สีดำ</mat-option>
+                                                                                  <mat-option value="blue">สีน้ำเงิน</mat-option>
+                                                                                </mat-select>
+                                                                            <mat-hint align="end">กดที่ลูกศรเพื่อเลือกสี^</mat-hint>
+                                                                      </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                            <mat-label>การผสมพันธุ์</mat-label>
+                                                                            <input matInput placeholder="กรอกการผสมพันธุ์">
+                                                                      </mat-form-field>
+                                                                  </mat-card>
+                                                                  <mat-card class="col text-center"><!-- ช่องสาม --> 
+                                                                       <mat-card-title class="text-center">    
+                                                                          กรอกข้อมูลแรกเกิดและหย่านม
+                                                                      </mat-card-title>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>น้ำหนักแรกเกิด</mat-label>
+                                                                        <input matInput placeholder="กรอกน้ำหนักแรกเกิด">
+                                                                      </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>รอบอกแรกเกิด</mat-label>
+                                                                        <input matInput placeholder="กรอกรอบอก">
+                                                                      </mat-form-field>
+                                                                  <mat-form-field>
+                                                                          <input matInput [matDatepicker]="picker2" placeholder="วันหย่านม">
+                                                                          <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                                                          <mat-datepicker #picker2></mat-datepicker>
+                                                                      </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>น้ำหนักวันหย่านม</mat-label>
+                                                                        <input matInput placeholder="กรอกน้ำหนักวันหย่านม">
+                                                                    </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>รอบออกวันหย่านม</mat-label>
+                                                                        <input matInput placeholder="กรอกรอบออกวันหย่านม">
+                                                                    </mat-form-field>
+                                                                  <mat-form-field appearance="outline">
+                                                                        <mat-label>ความสูงสะโพก(สำหรับโคที่มีอายุเกิน 1 ปีขั้นไป)</mat-label>
+                                                                        <input matInput placeholder="กรอกความสูงสะโพก">
+                                                                    </mat-form-field>
+                                                                  </mat-card>
+                                                                  <mat-card class="col text-center"><!-- ช่องสี่ -->   
+                                                                    <mat-card-title class="text-center">    
+                                                                        กรอกรายละเอียดพ่อและแม่พันธุ์
+                                                                      </mat-card-title>
+                                                                    <mat-form-field class="fill1" appearance="outline">
+                                                                        <mat-label>ชื่อพ่อพันธุ์</mat-label>
+                                                                        <input matInput placeholder="กรอกชื่อพ่อพันธุ์">
+                                                                      </mat-form-field>
+                                                                    <mat-form-field class="fill1" appearance="outline">
+                                                                        <mat-label>เลขทะเบียนพ่อโค</mat-label>
+                                                                        <input matInput placeholder="กรอกเลขทะเบียนพ่อโค">
+                                                                      </mat-form-field><br>
+                                                                    <mat-form-field class="fill1" appearance="outline">
+                                                                        <mat-label>ชื่อแม่พันธุ์</mat-label>
+                                                                        <input matInput placeholder="กรอกชื่อแม่พันธุ์">
+                                                                      </mat-form-field>
+                                                                    <mat-form-field class="fill1" appearance="outline">
+                                                                        <mat-label>เลขทะเบียนแม่โค</mat-label>
+                                                                        <input matInput placeholder="กรอกเลขทะเบียนแม่โค">
+                                                                      </mat-form-field><br>
+                                                                    <mat-form-field appearance="outline">
+                                                                         <mat-label>ผู้บำรุงพันธุ์(ฺBreeder)</mat-label>
+                                                                         <input matInput placeholder="กรอกผู้บำรุงพันธุ์">
+                                                                      </mat-form-field><br>
+                                                                    <mat-form-field appearance="outline">
+                                                                        <mat-label>เจ้าของโค(ฺOwner)</mat-label>
+                                                                        <input matInput placeholder="กรอกเจ้าของโค">
+                                                                      </mat-form-field>
+                                                                  </mat-card>
+                                                                  <mat-card class="col text-center"><!-- ช่องสี่ -->  
+                                                                     <mat-card-title class="text-center">    
+                                                                         อัพโหลดรูปโคที่ต้องการบันทึก
+                                                                     </mat-card-title>
+                                                                  </mat-card>
+                                                              </div> 
+                                                              <br>
+                                                              <mat-checkbox>ขอรับรองข้อมูลว่าเป็นความจริงทุกประการ</mat-checkbox><br><br>
+                                                              <button mat-raised-button color="accent" style="font-size: 24px;">สั่งทำ</button>
+                                                              <button mat-raised-button color="warn" style="font-size: 24px;">รีเซ็ต</button>   
+                                                          </div>
+                                                        </mat-card>  
+                        </div>                   
+                </mat-tab>
+                <mat-tab label="แองกัส">
+                        
+                </mat-tab>
+                <mat-tab label="ชาร์โรเล่ส์"> 
+
+                </mat-tab>
+                <mat-tab label="บีฟมาสเตอร์">
+
+                </mat-tab>
+
+        </mat-tab-group>
+    </mat-card>
+        
+        
+     

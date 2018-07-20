@@ -1,0 +1,51 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="false"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)">
+    <mat-toolbar color="primary">เมนู</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home">หน้าหลัก</a>
+      <a mat-list-item routerLink="/record">บันทึก</a>
+      <a mat-list-item routerLink="/order">สั่งทำ</a>
+      <a mat-list-item routerLink="/search">ค้นหา</a>
+      <a mat-list-item routerLink="/follow">ติดตาม</a>
+      <a mat-list-item class="logins" routerLink="auth/login">ลงชื่อเข้าใช้</a>
+      <a mat-list-item class="regis" routerLink="auth/register">สมัครสมาชิก</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Cattle Pedigree Online</span>
+      <span class="spacer"></span>
+        <div class="nav2">
+          <a  routerLink="/home">หน้าหลัก</a>
+          <a  routerLink="/record">บันทึก</a>
+          <a  routerLink="/order">สั่งทำ</a>
+          <a  routerLink="/search">ค้นหา</a>
+          <a  routerLink="/follow">ติดตาม</a>
+          <button mat-raised-button color="primary" routerLink="auth/login">ลงชื่อเข้าใช้</button>
+          <button mat-raised-button color="accent" routerLink="auth/register">สมัครสมาชิก</button>
+        </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<div>
+  <footer >
+      <div layout="row" layout-align="center center">
+          <h2>Computer Engineering Project</h2>
+      </div>
+  </footer>
+</div>

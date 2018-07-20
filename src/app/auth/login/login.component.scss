@@ -1,0 +1,40 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';    
+
+.mat-card {    
+    max-width: 95%;  
+    min-height:88%;  
+    margin: 1rem auto;    
+    align-items: center;
+} 
+
+.blacks{
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.5) 90%, #ffffff 100%), url(/assets/img/intro3.jpg );
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+}
+
+.mat-form-field{
+  width: 8.4cm;
+  height: 1cm;
+  padding: 20px;
+}
+
+button {
+   height: 1.5cm;
+   width: 3.5cm;
+  margin-top: 1cm;
+}
+
+
+.row{
+   align-items: center;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}

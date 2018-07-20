@@ -1,0 +1,33 @@
+.masthead {
+    position: relative;
+    width: 100%;
+    min-height: 1rem;
+    padding: 26.6rem 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.5) 90%, #ffffff 100%), url("/assets/img/intro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+
+.example-card {
+    max-width: 400px;
+  }
+  
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  
+.concon{
+    padding: 14cm;
+}
+
+.jumbotron{
+    background: rgba(0, 0, 0, 0.5);
+    height: 250px;
+    width: 100%;
+  }
+ 
+  

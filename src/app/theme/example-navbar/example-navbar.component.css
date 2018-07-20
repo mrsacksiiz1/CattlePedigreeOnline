@@ -1,0 +1,50 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0,0,0,.24);
+}
+
+
+@media (min-width: 768px){
+  .sidenav{
+    display: none;
+  }
+} 
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+@media (max-width: 768px){
+  .nav2{
+    display: none;
+  }
+} 
+
+
+
+
+mat-toolbar a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.logins{
+  background-color: rgb(148, 16, 255);
+  color: white;
+  
+}
+
+.regis{
+  background-color: rgb(6, 101, 243);
+  color: white;
+}
+
+footer {
+  height: 100%;
+}
